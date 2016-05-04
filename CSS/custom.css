@@ -1,0 +1,85 @@
+.blackFont {
+    color: black;
+}
+
+.whiteFont {
+	color: white;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+.imgPaddedLeft {
+    float: left;
+    margin-left: 75px;
+}
+
+#left_col {
+    float: left;
+    margin-top: 25px;
+}
+
+.imgPaddedRight {
+    float: right;
+    margin-right: 75px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+#right_col {
+    float: right;
+    margin-top: 25px;
+}
+
+#myCarousel {
+    width: 50%;
+    margin: auto;
+}
+
+body {
+	background: url(http://elizabethnicolesalon.com/wp-content/uploads/2013/01/dark-wood-background.jpg);
+    padding-top: 75px;
+}
+
+.header {
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+.logo {
+    float: left;
+    font-family: "Helvetica";
+    font-size: large;
+    padding-left: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+    float: left;
+    margin-left: 25px;
+    padding-top: 25px;
+    font-size: large;
+}
+
+.nav {
+    float: right;
+    padding-right: 100px;
+}
+
+.carousel-indicators {
+    margin: auto;
+}
+
+.gif {
+    padding-right: 100px;
+    padding-top: 100px;
+    width: 150%;
+    height: 150%;
+}
