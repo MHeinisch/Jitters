@@ -1,0 +1,68 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/custom.css')
+    title Jitter's Lounge
+  body
+    .header
+      .container
+        .logo
+          h1#titleOfPage Jitter's
+        .nav
+          ul
+            li
+              a(href='/') Home
+            li
+              a(href='about') About
+            li
+              a(href='happyhour') Happy Hour
+            li
+              a(href='pgd') Packer Game Days
+            li
+              a(href='events') Events
+    .row
+      #left_col.col-sm-6.whiteFont
+        center
+          table.hhtable
+            tr
+              td Margarita Monday
+              td $4 Margaritas all day!
+            tr
+              td Top Shelf Tuesday
+              td All top shelf drinks $2 off all day!
+            tr
+              td Wine Wednesday
+              td $5 glasses of wine all day!
+            tr
+              td Thirsty Thursday
+              td Buy one get one half price all day!
+            tr
+              td Fruit Bomb Friday
+              td $3 SKYY flavored vodka bombs all day! 
+            tr
+              td Sloppy Saturday
+              td $2 off all Bloody Marys all day!
+            tr
+              td Sunday Funday
+              td All drinks $1 off all day!
+      #right_col.col-sm-6.padRight
+        center
+          h3.whiteFont.lowerBeerText Beer of the month: New Glarus Spotted Cow
+          br
+          img.center(src='images/spotted.jpg')
+          br
+        center
+          h4.whiteFont.fixText Our enticing happy hour specials will offer you more than any other bar in the area! Make sure to check back often, as the specials change frequently!
+    script(src='javascripts/jquery-1.12.3.min.js')
+    script(src='javascripts/bootstrap.min.js')
+    script.
+      $(document).ready(function () {
+      $('#titleOfPage').html("Happy Hour");
+      $('#titleOfPage').css({
+      color: 'white',
+      })
+      });

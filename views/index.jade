@@ -1,0 +1,69 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/custom.css')
+    title Jitter's Lounge
+  body
+    .header
+      .container
+        .logo
+          h1#titleOfPage Jitter's
+        .nav
+          ul
+            li
+              a(href='/') Home
+            li
+              a(href='about') About
+            li
+              a(href='happyhour') Happy Hour
+            li
+              a(href='pgd') Packer Game Days
+            li
+              a(href='events') Events
+    #myCarousel.carousel.slide
+      ol.carousel-indicators(style='position: center')
+        li.active(data-target='#myCarousel', data-slide-to='0')
+        li(data-target='#myCarousel', data-slide-to='1')
+        li(data-target='#myCarousel', data-slide-to='2')
+      .carousel-inner
+        .item.active
+          img.img-responsive(src='images/jitters.jpg', alt="Jitter''s")
+          .carousel-caption
+            h2
+              | Get 
+              a(href='/about') JITTERIZED
+              |  at Jitter's Lounge!
+            p 23 Main St, Menasha, WI
+        .item
+          img.img-responsive(src='images/booze.jpg', alt='After Work')
+          .carousel-caption
+            h2
+              a(href='/happyhour') Happy Hour
+            p Daily happy hour specials!
+        .item
+          img.img-responsive(src='images/packers.jpg', alt="Packer''s")
+          .carousel-caption
+            h2
+              a(href='/pgd') Packer Game Days
+            p Free shots every time the Packers score!
+      a.carousel-control.left(href='#myCarousel', data-slide='prev')
+        span.icon-prev
+      a.carousel-control.right(href='#myCarousel', data-slide='next')
+        span.icon-next
+    script(src='javascripts/jquery-1.12.3.min.js')
+    script(src='javascripts/bootstrap.min.js')
+    script.
+      $(document).ready(function () {
+      $('#titleOfPage').html("Jitter's Lounge");
+      $('#titleOfPage').css({
+      color: 'white',
+      });
+      $('#myCarousel').carousel({
+      interval: 3000,
+      cycle: true
+      }); 
+      });

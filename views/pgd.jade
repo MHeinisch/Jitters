@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/custom.css')
+    title Jitter's Lounge
+  body
+    .header
+      .container
+        .logo
+          h1#titleOfPage Jitter's
+        .nav
+          ul
+            li
+              a(href='/') Home
+            li
+              a(href='about') About
+            li
+              a(href='happyhour') Happy Hour
+            li
+              a(href='pgd') Packer Game Days
+            li
+              a(href='events') Events
+    .row
+      .whiteFont
+        center
+          h1
+            | GO PACK GO
+          img.gif.img-responsive(src='images/rodgers.gif')
+          center
+            h4.whiteFont Come to Jitter's during any Packers game and get free green and gold shots for every Packers touchdown! What better way to cheer on the Pack??
+      center
+        button#gifButton Da Bears
+    script(src='javascripts/jquery-1.12.3.min.js')
+    script(src='javascripts/bootstrap.min.js')
+    script.
+      $(document).ready(function () {
+      $('#titleOfPage').html("Packer Game Day");
+      $('#titleOfPage').css({
+      color: 'white',
+      });
+      });
+      $('#gifButton').on('click', function () {
+      if ($('.gif').attr('src') == 'images/rodgers.gif') {
+      $('.gif').attr('src', 'images/cutler.gif');
+      $('#gifButton').html("Go Pack Go");
+      } else {
+      $('.gif').attr('src', 'images/rodgers.gif');
+      $('#gifButton').html("Da Bears");
+      }
+      });

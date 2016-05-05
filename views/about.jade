@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/custom.css')
+    title Jitter's Lounge
+  body
+    .header
+      .container
+        .logo
+          h1#titleOfPage Jitter's
+        .nav
+          ul
+            li
+              a(href='/') Home
+            li
+              a(href='about') About
+            li
+              a(href='happyhour') Happy Hour
+            li
+              a(href='pgd') Packer Game Days
+            li
+              a(href='events') Events
+    #left_col.row
+      center
+        img.img-responsive.imgPaddedLeft(src='images/jitters2.jpg')
+    #right_col.col-sm-6.textLeft
+      div
+        a(href='https://www.google.com/maps/dir//23+Main+St,+Menasha,+WI+54952/@44.1996795,-88.4519866,19z/data=!4m16!1m7!3m6!1s0x8803b8f7d50a9c91:0x23515fb08c2c075a!2s23+Main+St,+Menasha,+WI+54952!3b1!8m2!3d44.1994356!4d-88.4523421!4m7!1m0!1m5!1m1!1s0x8803b8f7d50a9c91:0x23515fb08c2c075a!2m2!1d-88.4523421!2d44.1994356')
+          img.img-responsive.imgPaddedRight(src='images/jittersmap.jpg')
+      h2.whiteFont Come get Jitterized!
+      br
+      h4.whiteFont Open Everyday 11am-2am
+      h4.whiteFont Located at 23 Main St, Menasha, WI
+      h4.whiteFont Click the map for directions.
+      br
+      p.whiteFont
+        | Just down the road from Lake Winnebago, Jitter's Lounge is the place to be!
+        | Whether you want to shoot pool and throw darts, roll the daily dice, catch the game, spend time in the beer garden, or just relax and enjoy a drink with our friendly bartending staff,
+        | Jitter's is here for you. Daily happy hour specials as well as promotions during Packers, Brewers, and Bucks game days will offer plenty of choices!
+        | Don't forget to check out our Events page for upcoming events!
+        | Come on down to Jitter's Lounge in the heart of downtown Menasha!
+    script(src='javascripts/jquery-1.12.3.min.js')
+    script(src='javascripts/bootstrap.min.js')
+    script.
+      $(document).ready(function () {
+      $('#titleOfPage').html("About Jitter's");
+      $('#titleOfPage').css({
+      color: 'white',
+      })
+      });
